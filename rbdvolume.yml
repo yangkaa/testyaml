@@ -1,0 +1,33 @@
+apiVersion: rainbond.io/v1alpha1
+kind: RainbondVolume
+objectmeta:
+  name: rainbondvolumerwx
+  generatename: ""
+  namespace: rbd-system
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels:
+    accessModes: rwx
+    belongTo: rainbond-operator
+    creator: Rainbond
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  clustername: ""
+  managedfields: []
+spec:
+  storageclassname: ""
+  storageclassparameters: null
+  csiplugin:
+    aliyunclouddisk: null
+    aliyunnas: null
+    nfs: {}
+  storagerequest: null
+  imagerepository: registry.cn-hangzhou.aliyuncs.com/goodrain
+status:
+  conditions: []

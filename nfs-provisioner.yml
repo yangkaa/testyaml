@@ -1,0 +1,40 @@
+apiVersion: rainbond.io/v1alpha1
+kind: RbdComponent
+objectmeta:
+  name: nfs-provisioner
+  generatename: ""
+  namespace: rbd-system
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels:
+    belongTo: rainbond-operator
+    creator: Rainbond
+    name: nfs-provisioner
+    priorityComponent: "true"
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  clustername: ""
+  managedfields: []
+spec:
+  replicas: 1
+  image: registry.cn-hangzhou.aliyuncs.com/goodrain/nfs-provisioner:v5.5.0-release
+  imagepullpolicy: IfNotPresent
+  args: []
+  prioritycomponent: true
+  env: []
+  resources:
+    limits: {}
+    requests: {}
+  volumemounts: []
+  volumes: []
+status:
+  replicas: 0
+  readyreplicas: 0
+  conditions: []
+  pods: []

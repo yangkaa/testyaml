@@ -1,0 +1,63 @@
+apiVersion: rainbond.io/v1alpha1
+kind: RainbondCluster
+objectmeta:
+  name: rainbondcluster
+  generatename: ""
+  namespace: rbd-system
+  selflink: ""
+  uid: ""
+  resourceversion: ""
+  generation: 0
+  creationtimestamp: "0001-01-01T00:00:00Z"
+  deletiontimestamp: null
+  deletiongraceperiodseconds: null
+  labels: {}
+  annotations: {}
+  ownerreferences: []
+  finalizers: []
+  clustername: ""
+  managedfields: []
+spec:
+  enableha: false
+  rainbondimagerepository: registry.cn-hangzhou.aliyuncs.com/goodrain
+  suffixhttphost: d86562.grapps.cn
+  gatewayingressips:
+  - 192.168.0.58
+  nodesforgateway:
+  - name: dev002
+    internalip: 192.168.0.58
+    externalip: ""
+  nodesforchaos:
+  - name: dev002
+    internalip: 192.168.0.58
+    externalip: ""
+  installmode: WithoutPackage
+  imagehub: null
+  regiondatabase: null
+  uidatabase: null
+  etcdconfig: null
+  installversion: v5.5.0-release
+  civersion: ""
+  configcompleted: true
+  rainbondvolumespecrwx:
+    storageclassname: ""
+    storageclassparameters: null
+    csiplugin:
+      aliyunclouddisk: null
+      aliyunnas: null
+      nfs: {}
+    storagerequest: null
+    imagerepository: ""
+  rainbondvolumespecrwo: null
+  sentinelimage: ""
+  cachemode: hostpath
+status:
+  kubernetesversoin: ""
+  storageclasses: []
+  masterrolelabel: ""
+  gatewayavailablenodes: null
+  chaosavailablenodes: null
+  imagepullusername: ""
+  imagepullpassword: ""
+  imagepullsecret: null
+  conditions: []

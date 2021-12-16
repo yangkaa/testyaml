@@ -1,6 +1,6 @@
 apiVersion: rainbond.io/v1alpha1
 kind: RainbondCluster
-objectmeta:
+metadata:
   name: rainbondcluster
   generatename: ""
   namespace: rbd-system

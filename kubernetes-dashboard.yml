@@ -1,6 +1,6 @@
 apiVersion: rainbond.io/v1alpha1
 kind: RbdComponent
-objectmeta:
+metadata:
   name: kubernetes-dashboard
   generatename: ""
   namespace: rbd-system

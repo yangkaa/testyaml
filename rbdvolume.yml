@@ -8,6 +8,6 @@ metadata:
     belongTo: rainbond-operator
     creator: Rainbond
 spec:
-  csiPlugin:
-    nfs: {}
+  storageClassParameters:
+    provisioner: rancher.io/local-path
   imageRepository: registry.cn-hangzhou.aliyuncs.com/goodrain

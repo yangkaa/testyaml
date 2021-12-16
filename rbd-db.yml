@@ -10,5 +10,5 @@ metadata:
 spec:
   replicas: 1
   image: registry.cn-hangzhou.aliyuncs.com/goodrain/rbd-db:8.0.19
-  imagepullpolicy: IfNotPresent
-  prioritycomponent: false
+  imagePullPolicy: IfNotPresent
+  priorityComponent: false

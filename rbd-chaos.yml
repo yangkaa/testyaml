@@ -10,5 +10,5 @@ metadata:
 spec:
   replicas: 1
   image: registry.cn-hangzhou.aliyuncs.com/goodrain/rbd-chaos:v5.5.0-release
-  imagepullpolicy: IfNotPresent
-  prioritycomponent: false
+  imagePullPolicy: IfNotPresent
+  priorityComponent: false

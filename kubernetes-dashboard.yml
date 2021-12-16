@@ -10,5 +10,5 @@ metadata:
 spec:
   replicas: 1
   image: registry.cn-hangzhou.aliyuncs.com/goodrain/kubernetes-dashboard:v2.0.1-3
-  imagepullpolicy: IfNotPresent
-  prioritycomponent: false
+  imagePullPolicy: IfNotPresent
+  priorityComponent: false

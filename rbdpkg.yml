@@ -2,21 +2,8 @@ apiVersion: rainbond.io/v1alpha1
 kind: RainbondPackage
 metadata:
   name: rainbondpackage
-  generatename: ""
   namespace: rbd-system
-  selflink: ""
-  uid: ""
-  resourceversion: ""
-  generation: 0
-  creationtimestamp: "0001-01-01T00:00:00Z"
-  deletiontimestamp: null
-  deletiongraceperiodseconds: null
   labels: {}
-  annotations: {}
-  ownerreferences: []
-  finalizers: []
-  clustername: ""
-  managedfields: []
 spec:
   pkgpath: /opt/rainbond/pkg/tgz/rainbond.tgz
   imagehubuser: ""

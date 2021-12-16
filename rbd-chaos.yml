@@ -7,6 +7,7 @@ metadata:
     belongTo: rainbond-operator
     creator: Rainbond
     name: rbd-chaos
+    persistentVolumeClaimAccessModes: ReadWriteOnce
 spec:
   replicas: 1
   image: registry.cn-hangzhou.aliyuncs.com/goodrain/rbd-chaos:v5.5.0-release

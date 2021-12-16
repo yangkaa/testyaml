@@ -1,10 +1,10 @@
 apiVersion: rainbond.io/v1alpha1
 kind: RainbondVolume
 metadata:
-  name: rainbondvolumerwx
+  name: local-path
   namespace: rbd-system
   labels:
-    accessModes: rwx
+    accessModes: rwo
     belongTo: rainbond-operator
     creator: Rainbond
 spec:

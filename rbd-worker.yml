@@ -7,6 +7,7 @@ metadata:
     belongTo: rainbond-operator
     creator: Rainbond
     name: rbd-worker
+    persistentVolumeClaimAccessModes: ReadWriteOnce
 spec:
   replicas: 1
   image: registry.cn-hangzhou.aliyuncs.com/goodrain/rbd-worker:v5.5.0-release

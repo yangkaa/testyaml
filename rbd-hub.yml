@@ -8,6 +8,7 @@ metadata:
     creator: Rainbond
     name: rbd-hub
     priorityComponent: "true"
+    persistentVolumeClaimAccessModes: ReadWriteOnce
 spec:
   replicas: 1
   image: registry.cn-hangzhou.aliyuncs.com/goodrain/registry:2.6.2

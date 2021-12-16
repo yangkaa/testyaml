@@ -4,31 +4,23 @@ metadata:
   name: rainbondcluster
   namespace: rbd-system
 spec:
-  enableha: false
-  rainbondimagerepository: registry.cn-hangzhou.aliyuncs.com/goodrain
-  suffixhttphost: d86562.grapps.cn
-  gatewayingressips:
+  rainbondImageRepository: registry.cn-hangzhou.aliyuncs.com/goodrain
+  suffixHTTPHost: d86562.grapps.cn
+  GatewayIngressIPs:
   - 192.168.0.58
-  nodesforgateway:
+  nodesForGateway:
   - name: dev002
-    internalip: 192.168.0.58
-    externalip: ""
-  nodesforchaos:
+    internalIP: 192.168.0.58
+    externalIP: ""
+  nodesForChaos:
   - name: dev002
-    internalip: 192.168.0.58
-    externalip: ""
-  installmode: WithoutPackage
-  installversion: v5.5.0-release
-  configcompleted: true
-  rainbondvolumespecrwx:
-    storageclassname: ""
-    storageclassparameters: null
-    csiplugin:
-      aliyunclouddisk: null
-      aliyunnas: null
+    internalIP: 192.168.0.58
+    externalIP: ""
+  installMode: WithoutPackage
+  installVersion: v5.5.0-release
+  configCompleted: true
+  rainbondVolumeSpecRWX:
+    csiPlugin:
       nfs: {}
-    storagerequest: null
-    imagerepository: ""
-  rainbondvolumespecrwo: null
-  sentinelimage: ""
-  cachemode: hostpath
+    imageRepository: ""
+  cacheMode: hostpath

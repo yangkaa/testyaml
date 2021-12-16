@@ -5,10 +5,6 @@ metadata:
   namespace: rbd-system
   labels: {}
 spec:
-  pkgpath: /opt/rainbond/pkg/tgz/rainbond.tgz
-  imagehubuser: ""
-  imagehubpass: ""
-status:
-  conditions: []
-  imagesnumber: 0
-  imagespushed: []
+  pkgPath: /opt/rainbond/pkg/tgz/rainbond.tgz
+  imageHubUser: ""
+  imageHubPass: ""

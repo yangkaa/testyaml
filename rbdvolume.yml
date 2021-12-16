@@ -8,13 +8,6 @@ metadata:
     belongTo: rainbond-operator
     creator: Rainbond
 spec:
-  storageclassname: ""
-  storageclassparameters: null
-  csiplugin:
-    aliyunclouddisk: null
-    aliyunnas: null
+  csiPlugin:
     nfs: {}
-  storagerequest: null
-  imagerepository: registry.cn-hangzhou.aliyuncs.com/goodrain
-status:
-  conditions: []
+  imageRepository: registry.cn-hangzhou.aliyuncs.com/goodrain

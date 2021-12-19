@@ -6,21 +6,15 @@ metadata:
 spec:
   rainbondImageRepository: registry.cn-hangzhou.aliyuncs.com/goodrain
   suffixHTTPHost: d86562.grapps.cn
-  gatewayIngressIPs:
-  - 192.168.0.58
   nodesForGateway:
-  - name: dev002
-    internalIP: 192.168.0.58
+  - name: localhost
+    internalIP: 127.0.0.1
     externalIP: ""
   nodesForChaos:
-  - name: dev002
-    internalIP: 192.168.0.58
+  - name: localhost
+    internalIP: 127.0.0.1
     externalIP: ""
   installMode: WithoutPackage
   installVersion: v5.5.0-release
   configCompleted: true
-  rainbondVolumeSpecRWX:
-    csiPlugin:
-      nfs: {}
-    imageRepository: ""
   cacheMode: hostpath

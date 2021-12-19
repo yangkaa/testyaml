@@ -5,7 +5,7 @@ metadata:
   namespace: rbd-system
 spec:
   rainbondImageRepository: registry.cn-hangzhou.aliyuncs.com/goodrain
-  suffixHTTPHost: d86562.grapps.cn
+  suffixHTTPHost: ""
   nodesForGateway:
   - name: localhost
     internalIP: 127.0.0.1

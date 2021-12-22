@@ -6,14 +6,16 @@ metadata:
 spec:
   rainbondImageRepository: registry.cn-hangzhou.aliyuncs.com/goodrain
   suffixHTTPHost: ""
+  gatewayIngressIPs:
+  - single_node_external_ip
   nodesForGateway:
-  - name: localhost
-    internalIP: 127.0.0.1
-    externalIP: ""
+  - name: single_node_name
+    internalIP: single_node_internal_ip
+    externalIP: single_node_external_ip
   nodesForChaos:
-  - name: localhost
-    internalIP: 127.0.0.1
-    externalIP: ""
+  - name: single_node_name
+    internalIP: single_node_internal_ip
+    externalIP: single_node_external_ip
   installMode: WithoutPackage
   installVersion: v5.5.0-release
   configCompleted: true
